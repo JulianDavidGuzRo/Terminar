@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fromulario</title>
+</head>
+<body>
+    <form id="dataform" method="">
+        <fieldset><legend>DATOS PERSONALES</legend></fieldset>
+        <label for="nombre">NOMBRE</label>
+        <input type="text" id="name"name="name" placeholder="Introduce tu nombre"minlength="3" maxlength="50" pattern="" title="Introduce al menos 3 caracteres maximo 50" tabindex="0"autofocus="true" autocomplete="off" required >
+        <br><br>
+        <select id="typedocument" id=""></select>
+        <label for="documet">No documento</label>
+        <input type="text"name="typedocument">
+        <option value="NADA" selected="SELECTED">SELECIONE UN TIPO DE DOCUMENTO</option>
+        <option value="C.C">CEDULA DE IDENTIDAD</option>
+        <option value="T.I">TARJETA DE IDENTIDAD</option>
+        <option value="C.E">CEDULA DE EXTRANJERIA</option>
+    </select>
+    <label for=""></label>
+    <label type="number"id="document" name=""placeholder= "introduce tu documento de identidad" min="2" max="99" tabindex="1"></label>
+    <label for="Estado civil"></label>
+    <input type="radio"name="Ecivl" id="Ecivil" value="soltero">soltero
+    <input type="radio"name="Ecivl" id="Ecivil" value="casado">casado
+    <input type="radio"name="Ecivl" id="Ecivil" value="divorciado">
+    <input type="radio"name="Ecivl" id="Ecivil" value="viudo">
+    
+    <fieldset><legend>Informacion de estudio y otros</legend></fieldset>
+    <label for="colores">COLOR FAVORITO</label>
+    <input type="color"id="color">
+    <label for="dateInsc">FECHA DE INSCRIPCION</label>
+    <input type="date" id="">
+    <label for="documentFile"></label>
+    <input type="file" name="file" id="document">
+
+    <hr>
+    <label for="lenguajes">lenguajes de pro</label>
+    <select id="lenguajes x2" name="">
+    <optgroup label="lenguajes tipidos">
+    <option value="java">Java</option>
+    <option value="csharp">C#</option>
+    <option value="c">c++</option>
+</optgroup>
+
+<optgroup label="Lenguajes no tipidos"></optgroup>
+<option value="pyton"></option>
+<option value="">js</option>
+</optgroup>
+</select> <br>
+
+ <label for="acepta">¿Acepta terminos y condiciones?</label>
+    <input type="checkbox"id="terminos">
+    <hr>
+    <input type="submit" value="Envio de datos"><!--PHP-->
+    <button id="validar"> VALIDAR</button><!--JS-->
+
+
+    </form>
+    <script src="./scripts/MAIN.JS"></script>
+
+    
+</body>
+</html>
